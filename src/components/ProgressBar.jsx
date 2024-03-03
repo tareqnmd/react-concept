@@ -22,15 +22,10 @@ const ProgressBar = ({ value, onComplete = () => {} }) => {
 				{percent.toFixed()}%
 			</span>
 			<div
-				// style={{ width: `${percent}%` }}
 				style={{
 					transform: `scaleX(${percent / MAX})`,
 					transformOrigin: 'left',
 				}}
-				aria-valuemin={MIN}
-				aria-valuemax={MAX}
-				aria-valuenow={percent}
-				role="progressbar"
 			/>
 		</div>
 	);
