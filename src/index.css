@@ -30,3 +30,30 @@
 	align-items: center;
 	z-index: 99;
 }
+
+.grid-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.grid-area {
+	display: grid;
+	max-width: 300px;
+	width: 100%;
+	padding: 20px;
+	gap: 20px;
+	border: 1px solid #000;
+}
+
+.grid-cell {
+	background-color: transparent;
+	border: 1px solid #000;
+	height: 0;
+	padding-bottom: 100%;
+}
+.grid-cell-activated {
+	background-color: green;
+}
