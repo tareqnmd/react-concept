@@ -1,13 +1,11 @@
 /* eslint-disable react/display-name */
 const HigherOrderCom = (Component) => {
-	return () => {
-		return (
-			<>
-				<h3>data from higher com</h3>
-				<Component />
-			</>
-		);
-	};
+	return (props) => (
+		<>
+			<h4>High Component</h4>
+			<Component {...props} />
+		</>
+	);
 };
 
 export default HigherOrderCom;
